@@ -28,9 +28,9 @@ cd fraudshield-ai```
 
 2. **Virtual Environment:** ```bash
 python -m venv venv
-# Windows:
+#Windows:
 venv\Scripts\activate
-# macOS/Linux:
+#macOS/Linux:
 source venv/bin/activate```
 
 3. **System Requirements (FFmpeg)**
