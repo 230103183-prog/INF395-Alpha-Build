@@ -28,21 +28,24 @@ cd fraudshield-ai```
 
 2. **Virtual Environment:** ```bash
 python -m venv venv
+
 #Windows:
 venv\Scripts\activate
+
 #macOS/Linux:
 source venv/bin/activate```
 
-3. **System Requirements (FFmpeg)**
+4. **System Requirements (FFmpeg):**
+   
 macOS: `brew install ffmpeg`
 
 Ubuntu: `sudo apt install ffmpeg`
 
 Windows: Download binaries from ffmpeg.org and add the bin folder to your system PATH.
 
-5. **Install Dependencies:** ```bash
+4. **Install Dependencies:** ```bash
 pip install --upgrade pip
 pip install -r requirements.txt```
 
-6. **Run Application:** ```bash
+5. **Run Application:** ```bash
 streamlit run src/app.py```
