@@ -26,7 +26,8 @@ Telephone fraud is a global security threat causing billions in losses. Attacker
 git clone https://github.com/your-repo/fraudshield-ai.git
 cd fraudshield-ai```
 
-2. **Virtual Environment:** ```bash
+2. **Virtual Environment:**
+```bash
 # Create the virtual environment
 python -m venv venv
 
@@ -34,7 +35,8 @@ python -m venv venv
 venv\Scripts\activate
 
 # Activate on macOS/Linux:
-source venv/bin/activate```
+source venv/bin/activate
+```
 
 3. **System Requirements (FFmpeg):**
    
