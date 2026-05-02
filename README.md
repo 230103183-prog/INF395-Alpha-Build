@@ -24,8 +24,7 @@ Telephone fraud is a global security threat causing billions in losses. Attacker
 ## Installation & Usage
 1. **Clone the repository:** ```bash
 git clone https://github.com/your-repo/fraudshield-ai.git
-cd fraudshield-ai
-```
+cd fraudshield-ai```
 
 2. **Virtual Environment:**
 ```bash
@@ -50,7 +49,6 @@ Windows: Download binaries from [ffmpeg.org](https://ffmpeg.org/download.html) a
 4. **Install Dependencies:** ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
-```
 
 6. **Run Application:**```bash
-streamlit run src/app.py```
+streamlit run src/app.py
