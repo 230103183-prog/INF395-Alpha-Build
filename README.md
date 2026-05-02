@@ -27,8 +27,10 @@ git clone https://github.com/your-repo/fraudshield-ai.git
 cd fraudshield-ai```
 
 2. **Virtual Environment:** ```python -m venv venv
+
 # Windows:
 venv\Scripts\activate
+
 # macOS/Linux:
 source venv/bin/activate```
 
