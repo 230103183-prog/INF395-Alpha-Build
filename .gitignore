@@ -1,29 +1,23 @@
 # Byte-compiled / optimized / DLL files
-
 pycache/
 *.py[cod]
 *$py.class
 
 # Virtual environment (matches your project folder)
-
 venv/
 .venv/
 env/
 
 # Environment variables and secrets
-
 .env
 
 # Editor settings
-
 .vscode/
 .idea/
 
 # Streamlit cache and settings
-
 .streamlit/
 
 # OS generated files
-
 .DS_Store
 Thumbs.db
