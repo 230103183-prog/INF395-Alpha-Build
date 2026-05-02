@@ -44,7 +44,7 @@ macOS: `brew install ffmpeg`
 
 Ubuntu: `sudo apt install ffmpeg`
 
-Windows: Download binaries from ffmpeg.org and add the bin folder to your system PATH.
+Windows: Download binaries from [ffmpeg.org](https://ffmpeg.org/download.html) and add the `bin` folder to your system PATH.
 
 4. **Install Dependencies:** ```bash
 pip install --upgrade pip
