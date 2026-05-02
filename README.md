@@ -5,7 +5,7 @@ An intelligent real-time system designed to detect and prevent telephone fraud u
 Telephone fraud is a growing global threat where attackers use social engineering to manipulate victims into revealing sensitive data. Traditional detection methods often fail to catch subtle behavioral cues in real-time, making it necessary to have an automated defense layer that analyzes both linguistic content and acoustic patterns in calls.
 
 # Project Overview
-Course: INF 395 Final Project - Alpha Build
+Course: INF 395 Final Project
 
 ## FraudGuard AI is an intelligent system designed to detect telephone fraud in real-time. It uses a multimodal approach, analyzing both the content of the conversation (NLP) and acoustic metadata (speech rate, duration, and ASR confidence) to identify suspicious patterns.
 
@@ -32,15 +32,17 @@ Dashboard: Streamlit
 Audio Processing: FFmpeg, OpenSMILE
 
 # Repository Structure
-src/ — Contains app.py and core logic.
+app.py — The core Streamlit application and UI logic.
 
 assets/ — Directory with test samples (formerly sample_audio/).
 
-models/ — Pre-trained model weights (.pkl files).
+fraud_model_*.pkl — Pre-trained machine learning models.
 
 docs/ — Project documentation.
 
 tests/ — Automated tests.
+
+packages.txt — System-level dependencies required for audio processing.
 
 requirements.txt — List of Python dependencies.
 
