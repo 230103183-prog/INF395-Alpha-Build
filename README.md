@@ -50,8 +50,8 @@ Windows: Download binaries from [ffmpeg.org](https://ffmpeg.org/download.html) a
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
+```
 
 5. **Run Application:**
-
 ```bash
 streamlit run src/app.py
