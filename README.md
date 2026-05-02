@@ -35,12 +35,14 @@ source venv/bin/activate```
 
 3. **System Requirements (FFmpeg)**
 macOS: `brew install ffmpeg`
+
 Ubuntu: `sudo apt install ffmpeg`
+
 Windows: Download binaries from ffmpeg.org and add the bin folder to your system PATH.
 
-4. **Install Dependencies:** ```bash
+5. **Install Dependencies:** ```bash
 pip install --upgrade pip
 pip install -r requirements.txt```
 
-5. **Run Application:** ```bash
+6. **Run Application:** ```bash
 streamlit run src/app.py```
