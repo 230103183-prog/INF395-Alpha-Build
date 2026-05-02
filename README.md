@@ -1,81 +1,46 @@
 # FraudShield AI: Multimodal Audio Analysis
-An intelligent real-time system designed to detect and prevent telephone fraud using AI-driven multimodal analysis.
+**Student IDs:** 230103183, 230103064
 
-# Problem Statement
-Telephone fraud is a growing global threat where attackers use social engineering to manipulate victims into revealing sensitive data. Traditional detection methods often fail to catch subtle behavioral cues in real-time, making it necessary to have an automated defense layer that analyzes both linguistic content and acoustic patterns in calls.
+## Problem Statement
+Telephone fraud is a global security threat causing billions in losses. Attackers use sophisticated social engineering to manipulate victims. Current solutions often lack real-time multimodal analysis—combining linguistic cues (what is said) with acoustic patterns (how it is said). FraudShield AI fills this gap by providing an automated, AI-driven defense layer to detect suspicious activities during live calls.
 
-# Project Overview
-Course: INF 395 Final Project
+## Technology Stack
+* **Language:** Python 3.9+
+* **Interface:** Streamlit
+* **Speech-to-Text:** OpenAI Whisper (Tiny)
+* **Machine Learning:** Scikit-learn (Random Forest), Joblib
+* **Audio Processing:** Librosa, FFmpeg
+* **NLP:** Pymorphy3 (Morphological analysis)
 
-## FraudGuard AI is an intelligent system designed to detect telephone fraud in real-time. It uses a multimodal approach, analyzing both the content of the conversation (NLP) and acoustic metadata (speech rate, duration, and ASR confidence) to identify suspicious patterns.
+## Repository Structure
+* `src/` — Core application logic and `app.py`.
+* `src/models/` — Pre-trained ML models (.pkl).
+* `assets/` — Sample audio files for testing.
+* `docs/` — Project documentation and manuals.
+* `tests/` — Unit tests for fraud detection logic.
+* `requirements.txt` — Python dependencies.
+* `packages.txt` — System dependencies (FFmpeg).
 
-# Key Features
-Automated Transcription: Integrated OpenAI Whisper (tiny model) for instant speech-to-text.
+## Installation & Usage
+1. **Clone the repository:** ```bash
+git clone https://github.com/your-repo/fraudshield-ai.git
+cd fraudshield-ai```
 
-Multimodal Prediction: Combines TF-IDF text analysis with acoustic features.
+2. **Virtual Environment:** ```bash
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate```
 
-Machine Learning: Powered by a tuned Random Forest Classifier.
+3. **System Requirements (FFmpeg)**
+macOS: `brew install ffmpeg`
+Ubuntu: `sudo apt install ffmpeg`
+Windows: Download binaries from ffmpeg.org and add the bin folder to your system PATH.
 
-Explainable AI (XAI): Automatically highlights fraudulent trigger words (e.g., "код", "счёт", "продиктовать") in the transcription.
+4. **Install Dependencies:** ```bash
+pip install --upgrade pip
+pip install -r requirements.txt```
 
-Interactive Dashboard: A clean Streamlit interface for easy file uploads and result visualization.
-
-# Technology Stack
-Language: Python
-
-Speech-to-Text: OpenAI Whisper
-
-ML Frameworks: Scikit-learn, XGBoost
-
-Dashboard: Streamlit
-
-Audio Processing: FFmpeg, OpenSMILE
-
-# Repository Structure
-app.py — The core Streamlit application and UI logic.
-
-assets/ — Directory with test samples (formerly sample_audio/).
-
-fraud_model_*.pkl — Pre-trained machine learning models.
-
-docs/ — Project documentation.
-
-tests/ — Automated tests.
-
-packages.txt — System-level dependencies required for audio processing.
-
-requirements.txt — List of Python dependencies.
-
-# Installation & Setup
-## 1. Prerequisites
-
-The system requires FFmpeg to process audio files.
-
-macOS: brew install ffmpeg
-
-Windows: winget install ffmpeg
-
-Linux: sudo apt install ffmpeg
-
-## 2. Install Dependencies
-
-Navigate to the project directory and run:
-
-Bash
-pip install -r requirements.txt
-## 3. Run the Application
-
-To launch the FraudGuard AI dashboard, execute the following command:
-
-Bash
-streamlit run src/app.py
-# How to Test
-Launch the app and wait for the browser to open http://localhost:8501.
-
-In the Audio Input section, upload a file from the assets/ folder.
-
-Enter the audio duration (in seconds) as seen in the player.
-
-Click Transcribe & Analyze Call.
-
-View the automated transcription and the fraud probability score provided by the AI.
+5. **Run Application:** ```bash
+streamlit run src/app.py```
