@@ -46,9 +46,12 @@ Ubuntu: `sudo apt install ffmpeg`
 
 Windows: Download binaries from [ffmpeg.org](https://ffmpeg.org/download.html) and add the `bin` folder to your system PATH.
 
-4. **Install Dependencies:** ```bash
+4. **Install Dependencies:**
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 
-6. **Run Application:**```bash
+5. **Run Application:**
+
+```bash
 streamlit run src/app.py
